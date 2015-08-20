@@ -1,5 +1,5 @@
 ---
-layout: page
+imgLink: http://placehold.it/300x300
 ---
 <!DOCTYPE html>
 <html>
@@ -7,6 +7,23 @@ layout: page
 {% include head.html %}
 
 <body>
+	<a href="..">back</a>
+	<div class="project-tile-container">
+		<div class="project-tile">
+			<a href="project-1/">
+    		<img src="{{ page.imgLink }}"></img>
+			</a>
+  	</div>
+		<div class="project-tile">
+    	<img src="{{ page.imgLink }}"></img>
+  	</div>
+		<div class="project-tile">
+    	<img src="{{ page.imgLink }}"></img>
+  	</div>
+		<div class="project-tile">
+    	<img src="{{ page.imgLink }}"></img>
+  	</div>
+	</div>
 </body>
 
 </html>

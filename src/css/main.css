@@ -1,1 +1,11 @@
-h1{color:red;font-size:50px}
+h1 {
+  color: #ff0000;
+  font-size: 50px;
+}
+.project-tile {
+  float: left;
+  margin-right: 10px;
+}
+.project-tile-container {
+  width: 50%;
+}
