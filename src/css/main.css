@@ -4,8 +4,13 @@ h1 {
 }
 .project-tile {
   float: left;
-  margin-right: 10px;
+  margin: 0 5px;
 }
 .project-tile-container {
-  width: 50%;
+  width: 59%;
+  margin: auto;
+}
+body {
+  width: 60%;
+  margin: auto;
 }
