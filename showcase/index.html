@@ -1,29 +1,9 @@
 ---
 imgLink: http://placehold.it/300x300
+file: showRoom
 ---
 <!DOCTYPE html>
 <html>
-
 {% include head.html %}
-
-<body>
-	<a href="..">back</a>
-	<div class="project-tile-container">
-		<div class="project-tile">
-			<a href="project-1/">
-    		<img src="{{ page.imgLink }}"></img>
-			</a>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
-	</div>
-</body>
-
+{% include showRoomBody.html %}
 </html>

@@ -1,0 +1,21 @@
+<div style="display:none" class="containr navbar-top">
+  <a class="btn btn-default" href="/" role="button">Home</a>
+  <a class="btn btn-default" href="showcase" role="button">Showcase</a>
+</div>
+<div id="header" class="container">
+  <div class="container row">
+    <div class="col-md-1 col-sm-2 col-xs-2">
+        <img src="https://secure.gravatar.com/avatar/df5fd92593a767e05ec21697db329069" id="headLogo" class="img-circle">
+    </div>
+    <div class="container headerText col-md-7 col-sm-5 col-xs-9">
+      <h1>Webedeveloper</h1>
+      <p class="subheadline">Alexander Hems Backend</p>
+    </div>
+  </div>
+  <div class="container breadCrumb">
+    <a href="/"><span class="glyphicon glyphicon-triangle-right"></span> Home</a>
+    {% if page.file == "showRoom" %}
+    <a href="/showcase"><span class="glyphicon glyphicon-triangle-right"></span> Showroom</a>
+    {% endif %}
+  </div>
+</div>

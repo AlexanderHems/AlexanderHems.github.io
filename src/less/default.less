@@ -1,3 +1,25 @@
-body .container{
-  background-color: #FAFAFA;
+@color-font : rgb(255, 255, 255);
+@color-highlight : #375204;
+
+*{
+  color : @color-font;
+}
+a{
+  color: @color-font;
+  &:hover{
+    color: @color-highlight;
+    text-decoration: none;
+  }
+}
+
+html, body{
+  background-color: #2d2626;
+}
+
+.container{
+}
+#main {
+  margin-top: 10px;
+  height: 100%;
+  background-color: rgb(142, 152, 140);
 }
