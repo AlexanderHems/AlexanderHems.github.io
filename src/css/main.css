@@ -9,9 +9,6 @@ h1 {
   padding-top: 10px;
 }
 @media (max-width: 767px) {
-  .project-tile {
-    width: 90%;
-  }
   .project-tile img {
     width: 100%;
     margin-top: 10px;
@@ -36,15 +33,6 @@ body {
   height: 100%;
   background-color: #8e988c;
 }
-@media (max-width: 767px) {
-  #headLogo {
-    width: 50px;
-  }
-  #header h1 {
-    font-size: 25px;
-    margin-bottom: 2px;
-  }
-}
 #header {
   margin-top: 10px;
 }
@@ -57,4 +45,13 @@ body {
 }
 #header .breadCrumb {
   margin-left: 10px;
+}
+@media (max-width: 767px) {
+  #headLogo {
+    width: 50px;
+  }
+  #header h1 {
+    font-size: 25px;
+    margin-bottom: 2px;
+  }
 }
