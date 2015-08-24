@@ -1,16 +1,11 @@
 h1 {
   font-size: 50px;
-  margin-bottom: -10px;
-  padding-bottom: 0;
 }
 .subheadline {
   padding-left: 2px;
 }
-.project-tile {
-  margin: auto;
-}
 .project-tile-container {
-  margin: auto;
+  margin-bottom: 10px;
 }
 @media (max-width: 767px) {
   .project-tile {
@@ -54,6 +49,7 @@ body {
 }
 #header h1 {
   margin-top: 0;
+  margin-bottom: -10px;
 }
 #header .headerText {
   margin-left: 10px;

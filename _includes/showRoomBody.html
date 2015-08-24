@@ -1,20 +1,26 @@
 <body>
   {% include header.html %}
-	<div id="main" class="container project-tile-container">
-		<div class="project-tile">
-			<a href="project-1/">
-    		<img src="{{ page.imgLink }}"></img>
-			</a>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
-		<div class="project-tile">
-    	<img src="{{ page.imgLink }}"></img>
-  	</div>
+	<div id="main" class="container">
+    <div class="row project-tile-container">
+      <div class="project-tile col-md-3">
+			   <a href="project-1/">
+    		  <img src="{{ page.imgLink }}"></img>
+			   </a>
+  	  </div>
+		  <div class="project-tile col-md-3 col-md-offset-3">
+        <a href="project-2/">
+    	     <img src="{{ page.imgLink }}"></img>
+       </a>
+  	  </div>
+    </div>
+    <div class="row project-tile-container">
+		  <div class="project-tile col-md-3">
+    	   <img src="{{ page.imgLink }}"></img>
+  	  </div>
+		  <div class="project-tile col-md-3 col-md-offset-3">
+    	   <img src="{{ page.imgLink }}"></img>
+  	  </div>
+    </div>
 	</div>
   {% include footer.html %}
 </body>
