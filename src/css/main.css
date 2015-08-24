@@ -10,7 +10,9 @@ h1 {
   width: 59%;
   margin: auto;
 }
-body {
-  width: 60%;
-  margin: auto;
+body .container {
+  background-color: #FAFAFA;
+}
+footer .container {
+  background-color: lightgrey;
 }
