@@ -15,15 +15,13 @@ function mediaPlaybackRequiresUserGesture() {
 function removeBehaviorsRestrictions() {
   var video = document.querySelector('video');
   video.load();
+  video.play();
   window.removeEventListener('keydown', removeBehaviorsRestrictions);
   window.removeEventListener('mousedown', removeBehaviorsRestrictions);
   window.removeEventListener('touchstart', removeBehaviorsRestrictions);
-
-  setTimeout(setSource, 1000);
 }
 
 if (mediaPlaybackRequiresUserGesture()) {
-  log('wait for input event');
   window.addEventListener('keydown', removeBehaviorsRestrictions);
   window.addEventListener('mousedown', removeBehaviorsRestrictions);
   window.addEventListener('touchstart', removeBehaviorsRestrictions);
