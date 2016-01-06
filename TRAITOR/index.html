@@ -6,14 +6,47 @@
     var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
     if ((mobile)) {
 
-      document.write('<video  loop="true" style="display:none" src="Cantina Band - Star Wars.mp3" autoplay="true" />');
+      document.write('<video id="cantina"  loop="true" style="display:none" src="Cantina Band - Star Wars.mp3" autoplay="true" />');
 
     } else {
-      document.write('<audio loop style="display:none" src="Cantina Band - Star Wars.mp3" autoplay/>');
+      document.write('<audio id="cantina" loop style="display:none" src="Cantina Band - Star Wars.mp3" autoplay/>');
 
     }
   </script>
 
+  <script>
 
+function log(msg) {
+  document.querySelector('pre').textContent += '\n ' + msg;
+}
+
+function mediaPlaybackRequiresUserGesture() {
+  // test if play() is ignored when not called from an input event handler
+  var video = document.createElement('video');
+  video.play();
+  return video.paused;
+}
+
+function removeBehaviorsRestrictions() {
+  var video = document.querySelector('video');
+  log('call load()');
+  video.load();
+  window.removeEventListener('keydown', removeBehaviorsRestrictions);
+  window.removeEventListener('mousedown', removeBehaviorsRestrictions);
+  window.removeEventListener('touchstart', removeBehaviorsRestrictions);
+  log('wait 1 second');
+  setTimeout(setSource, 1000);
+}
+
+if (mediaPlaybackRequiresUserGesture()) {
+  log('wait for input event');
+  window.addEventListener('keydown', removeBehaviorsRestrictions);
+  window.addEventListener('mousedown', removeBehaviorsRestrictions);
+  window.addEventListener('touchstart', removeBehaviorsRestrictions);
+} else {
+  log('no user gesture required');
+}
+
+  </script>
   </body>
 </html>
